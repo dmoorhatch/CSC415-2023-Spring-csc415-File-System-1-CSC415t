@@ -1,8 +1,19 @@
-# CSC415-2023-Spring-csc415-File-System-1-CSC415t
-Group 415's Project
+# CSC415-2023-Spring-File-System
 
-Group    members -    ID     - Github  
-Renee Sewak      - 920862901 - rsewak
-Jaime Guardado   - 920290979 - Jmg047
-Daniel Moorhatch - 922033512 - dmoorhatch
-Guangyi Jia      - 920757003 - GuangyiJia
+# Group 415's final project
+
+
+
+
+
+
+# Group Members:
+Name | GitHub Name | Student ID
+--- | --- | --- |
+Renee Sewak | rsewak | 920875901
+Jaime Guardado | Jmg047 | 920290979
+Daniel Moorhatch | dmoorhatch | 922033512
+Guangyi Jia | GuangyiJia | 920757003
+
+
+
