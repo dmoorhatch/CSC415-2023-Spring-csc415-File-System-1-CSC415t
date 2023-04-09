@@ -25,3 +25,20 @@ uint64_t totalFileSize; // Total size of all files in FS
 bitmap_t bitmap;
 
 }volumeControlBlock;
+
+void init_vcb(volumeControlBlock *vcb, int blockSize, int totalBlocks) {
+    strncpy(vcb->signature, "MyFILES", 16); // check sig
+    vcb->blockSize = blockSize;
+    vcb->totalBlocks = totalBlocks;
+    init_bitmap(&vcb->bitmap, totalBlocks);
+}
+
+void init_bitmap(bitmap_t *bitmap, int numBlocks) {
+
+    int numBytes = numBlocks / 8;
+    if (numBlocks % 8 != 0) {
+        numBytes++;
+    }
+    bitmap->data = malloc(numBytes);
+    bitmap->num_blocks = numBlocks;
+}
