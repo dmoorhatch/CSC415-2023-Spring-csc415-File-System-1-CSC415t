@@ -1,4 +1,21 @@
 
+/**************************************************************
+* Class:  CSC-415-02 Fall 2021
+* Names: Jaime Guardado, Guangyi Jia, Renee Sewak, Daniel Moorhatch
+* Student IDs: 920290979, 920757003, 920875901, 922033512
+* GitHub Name: Jmg047, GuangyiJia, rsewak, dmoorhatch
+* Group Name: 415
+* Project: Basic File System
+*
+* File: vcb.c
+*
+* Description: 
+*	This is the volume control block.
+*
+**************************************************************/
+
+#include "mfs.h"
+#include "fsLow.h"
 #include <stdio.h>
 #include <stdint.h>
 #include <time.h>
@@ -41,4 +58,23 @@ void init_bitmap(bitmap_t *bitmap, int numBlocks) {
     }
     bitmap->data = malloc(numBytes);
     bitmap->num_blocks = numBlocks;
+}
+
+// Function to find and allocate free space in our bitmap by 
+// using free blocks
+uint64_t allocateFreeSpace_Bitmap(uint64_t block_ToBeAllocated)
+{
+    //If the block to be allocated is 0 (VCB), then print
+    //error message 
+    if (block_ToBeAllocated <= 0 || block_ToBeAllocated == NULL)
+    {
+        printf("invalid arg in allocateFreeSpace_Bitmap");
+        return -1;
+    }
+
+    uint64_t numOfBlocksRequested = 0;
+
+    for () {
+
+    }
 }
