@@ -68,5 +68,3 @@ run: $(ROOTNAME)$(HW)$(FOPTION)
 
 vrun: $(ROOTNAME)$(HW)$(FOPTION)
 	valgrind ./$(ROOTNAME)$(HW)$(FOPTION) $(RUNOPTIONS)
-
-
